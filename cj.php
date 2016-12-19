@@ -34,7 +34,7 @@ $header_str = $header_array[mt_rand(0, (count($header_array) - 1))];
 $client -> setHeader('User-Agent', $header_str);
 /////////////////////////////////////////////////
 
-
+$crawler=null;
 
 if ("get" === $access_type) {
 	$crawler = $client -> request('GET', $url);
